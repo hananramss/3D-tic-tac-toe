@@ -1,0 +1,112 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Define base CSS variables for both themes */
+:root {
+  /* Dark Mode Colors (Default definitions if no class is applied) */
+  --color-background-dark: #1a1a2e;
+  --color-plane-dark: #2c3e50;
+  --color-line-dark: #ecf0f1;
+  --color-base-plane-dark: #34495e;
+  --color-x-piece-dark: #e74c3c;
+  --color-o-piece-dark: #3498db;
+
+  --ui-main-bg-gradient-from-dark: #5a2e8e;
+  /* Equivalent to purple-900 */
+  --ui-main-bg-gradient-to-dark: #4b0082;
+  /* Equivalent to indigo-900 */
+  --ui-bg-dark: #1f2937;
+  /* Equivalent to gray-800 */
+  --ui-text-dark: #ffffff;
+  /* Equivalent to white */
+  --ui-bg-opacity-dark: 0.7;
+  --ui-title-gradient-from-dark: #2dd4bf;
+  /* Equivalent to teal-400 */
+  --ui-title-gradient-to-dark: #3b82f6;
+  /* Equivalent to blue-500 */
+  --ui-paragraph-text-dark: #d1d5db;
+  /* Equivalent to gray-300 */
+
+  /* Light Mode Colors */
+  --color-background-light: #e0f7fa;
+  --color-plane-light: #bbdefb;
+  --color-line-light: #424242;
+  --color-base-plane-light: #90a4ae;
+  --color-x-piece-light: #ff6b6b;
+  /* Lighter red */
+  --color-o-piece-light: #66b2ff;
+  /* Lighter blue */
+
+  --ui-main-bg-gradient-from-light: #bfdbfe;
+  /* Equivalent to blue-100 */
+  --ui-main-bg-gradient-to-light: #a5f3fc;
+  /* Equivalent to cyan-100 */
+  --ui-bg-light: #ffffff;
+  /* Equivalent to white */
+  --ui-text-light: #1f2937;
+  /* Equivalent to gray-800 */
+  --ui-bg-opacity-light: 0.8;
+  --ui-title-gradient-from-light: #2563eb;
+  /* Equivalent to blue-600 */
+  --ui-title-gradient-to-light: #4f46e5;
+  /* Equivalent to indigo-800 */
+  --ui-paragraph-text-light: #4b5563;
+  /* Equivalent to gray-600 */
+
+  /* Default current theme variables (fallbacks if no class is active) */
+  --current-background: var(--color-background-dark);
+  --current-plane: var(--color-plane-dark);
+  --current-line: var(--color-line-dark);
+  --current-base-plane: var(--color-base-plane-dark);
+  --current-x-piece: var(--color-x-piece-dark);
+  --current-o-piece: var(--color-o-piece-dark);
+
+  --current-main-bg-gradient-from: var(--ui-main-bg-gradient-from-dark);
+  --current-main-bg-gradient-to: var(--ui-main-bg-gradient-to-dark);
+  --current-ui-bg: var(--ui-bg-dark);
+  --current-ui-text: var(--ui-text-dark);
+  --current-ui-bg-opacity: var(--ui-bg-opacity-dark);
+  --current-title-gradient-from: var(--ui-title-gradient-from-dark);
+  --current-title-gradient-to: var(--ui-title-gradient-to-dark);
+  --current-paragraph-text: var(--ui-paragraph-text-dark);
+}
+
+/* Dark Mode Class */
+.dark-mode {
+  --current-background: var(--color-background-dark);
+  --current-plane: var(--color-plane-dark);
+  --current-line: var(--color-line-dark);
+  --current-base-plane: var(--color-base-plane-dark);
+  --current-x-piece: var(--color-x-piece-dark);
+  --current-o-piece: var(--color-o-piece-dark);
+
+  --current-main-bg-gradient-from: var(--ui-main-bg-gradient-from-dark);
+  --current-main-bg-gradient-to: var(--ui-main-bg-gradient-to-dark);
+  --current-ui-bg: var(--ui-bg-dark);
+  --current-ui-text: var(--ui-text-dark);
+  --current-ui-bg-opacity: var(--ui-bg-opacity-dark);
+  --current-title-gradient-from: var(--ui-title-gradient-from-dark);
+  --current-title-gradient-to: var(--ui-title-gradient-to-dark);
+  --current-paragraph-text: var(--ui-paragraph-text-dark);
+}
+
+/* Light Mode Class */
+.light-mode {
+  --current-background: var(--color-background-light);
+  --current-plane: var(--color-plane-light);
+  --current-line: var(--color-line-light);
+  --current-base-plane: var(--color-base-plane-light);
+  --current-x-piece: var(--color-x-piece-light);
+  --current-o-piece: var(--color-o-piece-light);
+
+  --current-main-bg-gradient-from: var(--ui-main-bg-gradient-from-light);
+  --current-main-bg-gradient-to: var(--ui-main-bg-gradient-to-light);
+  --current-ui-bg: var(--ui-bg-light);
+  --current-ui-text: var(--ui-text-light);
+  --current-ui-bg-opacity: var(--ui-bg-opacity-light);
+  --current-title-gradient-from: var(--ui-title-gradient-from-light);
+  --current-title-gradient-to: var(--ui-title-gradient-to-light);
+  --current-paragraph-text: var(--ui-paragraph-text-light);
+}
