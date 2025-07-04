@@ -3,8 +3,9 @@ import { Poppins } from "next/font/google";
 import "../styles/globals.css"
 
 const poppins = Poppins({
-  variable: "--font-poppins",
-  weight: "100"
+  subsets: ['latin'], 
+  weight: ['400', '700'], 
+  preload: true,         
 });
 
 export const metadata: Metadata = {
@@ -24,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} antialiased`}
+        className={`${poppins.className} antialiased`}
       >
         {children}
       </body>
