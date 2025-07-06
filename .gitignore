@@ -69,3 +69,5 @@ cypress/screenshots/
 
 # Optional: Docker
 docker-compose.override.yml
+
+.vercel
