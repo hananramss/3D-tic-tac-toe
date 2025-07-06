@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎲 3D Tic Tac Toe: A Modern Twist on a Classic Game! 🚀
 
-## Getting Started
+Welcome to the future of Tic Tac Toe! This project reimagines the beloved classic in a stunning, interactive 3D environment, offering a fresh and engaging gameplay experience. Challenge your friends, track your scores, and switch themes on the fly!
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* **Immersive 3D Board:** Experience Tic Tac Toe like never before with a beautifully rendered 3D game board and pieces.
+* **Interactive Camera Controls:** Click and drag to rotate the board, giving you a perfect view from any angle.
+* **Dynamic Gameplay:** Clear turn indicators, automatic win/draw detection, and exciting winning line highlights.
+* **Score Tracking:** Keep tabs on who's leading with persistent scores for Player X and Player O across rounds.
+* **Seamless Responsiveness:** Play comfortably on any device – desktop, tablet, or mobile – thanks to a fully adaptive design.
+* **Dynamic Theme Switching:** Toggle between a sleek Dark Mode 🌙 and a vibrant Light Mode ☀️ to match your preference.
+* **Intuitive Controls:** Easy-to-use buttons for starting new rounds, resetting scores, and resetting the camera view.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🕹️ How to Play
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1.  **Click to Place:** Simply click on any empty cell on the 3D board to place your 'X' or 'O' mark.
+2.  **Rotate the Board:** Click and drag anywhere on the 3D canvas to rotate your view and get a better perspective.
+3.  **Win Condition:** Get three of your marks in a row (horizontally, vertically, or diagonally) to win the round!
+4.  **Reset & Replay:** Use the UI buttons to start a new round, reset scores, or adjust your view.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Technologies Used
 
-## Learn More
+* [**Next.js**](https://nextjs.org): The React framework for production, providing server-side rendering and static site generation.
+* [**React**](https://react.dev/): For building the interactive user interface.
+* [**TypeScript**](https://www.typescriptlang.org/): For type safety and improved code quality.
+* [**Three.js**](https://threejs.org/): The powerful 3D JavaScript library used for rendering the interactive game board and pieces.
+* [**Tailwind CSS**](https://tailwindcss.com/): A utility-first CSS framework for rapid and responsive styling.
+* [**OrbitControls**](https://threejs.org/docs/#examples/en/controls/OrbitControls): A Three.js helper for easy camera navigation.
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To run this project locally, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/hananramss/3D-tic-tac-toe
+    cd tic-tac-toe-app
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or yarn install
+    # or pnpm install
+    # or bun install
+    ```
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    # or yarn dev
+    # or pnpm dev
+    # or bun dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Deploy on Vercel
+## 🌐 Live Demo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Experience the game live on Vercel:
+👉 <https://tictactoe-hanan.vercel.app/>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Enjoy the game! If you have any feedback or suggestions, feel free to reach out.
